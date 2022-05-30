@@ -1,4 +1,4 @@
-from random import Random as rd
+
 print("Bem-vindo ao jogo de adivinhação!!!")
 numero_secreto = 55
 chute = int(input("Digite um número: "))
