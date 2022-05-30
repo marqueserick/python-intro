@@ -3,12 +3,13 @@ print("Bem-vindo ao jogo de adivinhação!!!")
 numero_secreto = 55
 chute_str = input("Digite um número: ")
 chute = int(chute_str)
+acertou = numero_secreto == chute
 maior = chute>numero_secreto
 menor = chute<numero_secreto
 
 print("Você digitou",chute)
 
-if (numero_secreto == chute):
+if (acertou):
     print("Você acertou!!!")
 else:
     print("Você errou!!! :(", end=" ")
