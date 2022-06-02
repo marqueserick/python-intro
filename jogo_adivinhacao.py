@@ -13,7 +13,7 @@ while(total_tentativas>0):
 
     if (acertou):
         print("Você acertou!!!")
-        break;
+        break
     else:
         total_tentativas-=1
         print("Você errou!!! :(", end=" ")

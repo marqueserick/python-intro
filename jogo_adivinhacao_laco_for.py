@@ -18,7 +18,7 @@ for rodada in range(1,(total_tentativas+1)):
 
     if (acertou):
         print("Você acertou!!!")
-        break;
+        break
 
     else:
         print("Você errou!!! :(", end=" ")
