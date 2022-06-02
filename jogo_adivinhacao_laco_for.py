@@ -29,13 +29,13 @@ for rodada in range(1,(total_tentativas+1)):
     print("Você digitou",chute)
 
     if chute < 1 or chute > 100:
-        pontos_perdidos += (abs(chute-numero_secreto) * constante_precisao)
+        pontos_perdidos += (100 * constante_precisao)
         print("Você deve digitar um número entre 1 e 100", end="\n\n")
         continue
 
     if (acertou):
         print("Você acertou!!!")
-        precisao = (pontos - pontos_perdidos) * 100 / pontos
+        precisao = abs((pontos - pontos_perdidos) * 100 / pontos)
         print("Sua precisão foi de {:.2f}%".format(precisao))
         break
 
@@ -49,5 +49,5 @@ for rodada in range(1,(total_tentativas+1)):
             print("Seu chute foi menor que o número secreto", end="\n\n")
 else:
     print("Fim de Jogo\nO número secreto era {}".format(numero_secreto))
-    precisao = (pontos - pontos_perdidos) * 100 / pontos
+    precisao = abs((pontos - pontos_perdidos) * 100 / pontos)
     print("Sua precisão foi de {:.2f}%".format(precisao))
