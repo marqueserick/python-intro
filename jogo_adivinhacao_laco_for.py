@@ -1,6 +1,7 @@
+import random as rd
 print("Bem-vindo ao jogo de adivinhação!!!")
-numero_secreto = 55
-total_tentativas = 8
+numero_secreto = int(rd.uniform(0,1)*100)
+total_tentativas = 3
 89
 for rodada in range(1,(total_tentativas+1)):
     print("Tentativa {} de {}".format(rodada,total_tentativas))
@@ -28,4 +29,4 @@ for rodada in range(1,(total_tentativas+1)):
         elif(menor):
             print("Seu chute foi menor que o número secreto")
 else:
-    print("Fim de Jogo")
+    print("Fim de Jogo\nO número secreto era {}".format(numero_secreto))
