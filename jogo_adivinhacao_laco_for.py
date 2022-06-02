@@ -1,6 +1,7 @@
 import random as rd
 print("Bem-vindo ao jogo de adivinhação!!!")
 numero_secreto = int(rd.uniform(0,1)*100)
+numero_secreto_randint = rd.randint(1,100)
 total_tentativas = 3
 89
 for rodada in range(1,(total_tentativas+1)):
