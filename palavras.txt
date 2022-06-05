@@ -1,0 +1,5 @@
+banana
+carro
+melancia
+morango
+peteca
