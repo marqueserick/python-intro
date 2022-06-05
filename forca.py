@@ -1,16 +1,13 @@
 def jogar():
     print("Bem-vindo ao jogo de Forca")
-    palavra_secreta = "caderno".upper()
-    letras_acertadas = []
-    acertos = 0
+    palavra_secreta = "banana".upper()
+    letras_acertadas = ["_" for p in palavra_secreta]
     erros = 0
     enforcou = False
     acertou = False
-    
 
-    for i in range(len(palavra_secreta)):
-        letras_acertadas.append("_")
     print("Palavra secreta:",palavra_mascarada(letras_acertadas), end="\n\n")
+
     nivel = input("Selecione um nível de dificuldade\n(1) Fácil (2) Médio (3) Difícil\n")
     if nivel == '1':
         total_tentativas = 7
@@ -30,10 +27,9 @@ def jogar():
         if chute in palavra_secreta:
             for i in range(len(palavra_secreta)):
                 if palavra_secreta[i] == chute:
-                    acertos+=1
                     letras_acertadas[i] = chute
-                    if acertos == len(palavra_secreta):
-                        acertou = True
+                    acertou = "_" not in letras_acertadas
+                    if acertou:
                         print("Parabéns, você descobriu a palavra secreta")
         else:
             erros+=1
