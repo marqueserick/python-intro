@@ -1,6 +1,4 @@
 import random as rd
-from tkinter import E
-
 
 def jogar():
     print("Bem-vindo ao jogo de Forca")
